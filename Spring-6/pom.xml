@@ -3,4 +3,24 @@
   <groupId>GTech</groupId>
   <artifactId>Spring-6</artifactId>
   <version>0.0.1-SNAPSHOT</version>
+  
+  
+  
+   <dependencies>
+  
+  
+   <!-- Source: https://mvnrepository.com/artifact/org.springframework/spring-context -->
+<dependency>
+    <groupId>org.springframework</groupId>
+    <artifactId>spring-context</artifactId>
+    <version>6.0.21</version>
+    <scope>compile</scope>
+</dependency>
+  
+  
+  </dependencies>
+  
+  
+  
+  
 </project>
