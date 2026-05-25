@@ -13,10 +13,27 @@ public class Config {
 	
 	
 	@Bean
-	@Primary
-	public Employee getEmp() {
+	public Employee getEmp1() {
 		
 		Employee emp=new Employee();
+		
+		System.out.println("Method Call 1");
+		
+		emp.id=33;
+		
+		return emp;
+	}
+	
+	
+	@Bean
+	@Primary
+	public Employee getEmp2() {
+		
+		Employee emp=new Employee();
+		
+		System.out.println("Method Call 2");
+		
+		emp.id=44;
 		
 		return emp;
 	}

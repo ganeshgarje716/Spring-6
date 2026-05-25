@@ -13,7 +13,11 @@ public class Test {
 		
 		ApplicationContext context=new AnnotationConfigApplicationContext(Config.class);
 		
-		Employee e = context.getBean(Employee.class);
+//		Employee e = (Employee)context.getBean("getEmp2");
+//		
+//		System.out.println(e.id);
+		
+        Employee e = context.getBean(Employee.class);
 		
 		System.out.println(e.id);
 		
