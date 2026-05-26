@@ -18,10 +18,19 @@ public class OrderService {
 	Payment payment;
 	
 	
-	public OrderService(@Qualifier("credit") Payment payment) {
+	@Autowired
+	public void setPayment(@Qualifier("upi") Payment payment) {
 		
 		this.payment=payment;
 	}
+	
+	
+//	public OrderService(@Qualifier("credit") Payment payment) {
+//		
+//		this.payment=payment;
+//	}
+	
+	
 	
 	public void processOrder() {
 		
