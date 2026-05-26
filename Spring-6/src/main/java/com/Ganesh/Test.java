@@ -3,6 +3,7 @@ package com.Ganesh;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
+import com.Ganesh.Service.OrderService;
 import com.Ganesh.entity.Employee;
 
 public class Test {
@@ -17,9 +18,12 @@ public class Test {
 //		
 //		System.out.println(e.id);
 		
-        Employee e = context.getBean(Employee.class);
+//        Employee e = context.getBean(Employee.class);
+//		
+//		System.out.println(e.id);
 		
-		System.out.println(e.id);
+		OrderService service = context.getBean(OrderService.class);
+		service.processOrder();
 		
 	}
 

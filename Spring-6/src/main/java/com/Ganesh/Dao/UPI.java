@@ -4,7 +4,7 @@ import org.springframework.stereotype.Component;
 
 import com.Ganesh.Service.Payment;
 
-@Component
+@Component("payment")
 public class UPI implements Payment{
 
 	@Override
