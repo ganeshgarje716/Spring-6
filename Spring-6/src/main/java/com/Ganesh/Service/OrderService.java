@@ -13,9 +13,15 @@ public class OrderService {
 	@Autowired
 	OrderDao dao;
 	
-	@Autowired
-	@Qualifier("upi")
+//	@Autowired
+//	@Qualifier("upi")
 	Payment payment;
+	
+	
+	public OrderService(@Qualifier("credit") Payment payment) {
+		
+		this.payment=payment;
+	}
 	
 	public void processOrder() {
 		
